@@ -9,7 +9,6 @@
   <style>
     :root {
       --bg: #020617;
-      --bg-soft: #020617cc;
       --card: rgba(15,23,42,0.85);
       --text: #e5e7eb;
       --muted: #94a3b8;
@@ -42,7 +41,6 @@
     h1 {
       font-size: clamp(36px, 6vw, 54px);
       font-weight: 900;
-      letter-spacing: -1px;
       margin-bottom: 20px;
     }
 
@@ -54,7 +52,7 @@
       margin-bottom: 36px;
     }
 
-    .hero a {
+    .btn {
       display: inline-block;
       padding: 16px 34px;
       border-radius: 999px;
@@ -66,7 +64,7 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .hero a:hover {
+    .btn:hover {
       transform: translateY(-3px);
       box-shadow: 0 18px 55px rgba(34,211,238,0.5);
     }
@@ -100,7 +98,7 @@
 
     h2 {
       font-size: 28px;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
 
     .card p {
@@ -108,29 +106,25 @@
       max-width: 760px;
     }
 
-    .features {
+    /* Screenshots */
+    .screenshots {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 22px;
+      gap: 24px;
       margin-top: 30px;
     }
 
-    .feature {
+    .screenshot {
       background: rgba(2,6,23,0.7);
       border-radius: 18px;
-      padding: 22px;
+      padding: 12px;
       border: 1px solid rgba(148,163,184,0.15);
     }
 
-    .feature h3 {
-      color: var(--accent);
-      font-size: 16px;
-      margin-bottom: 6px;
-    }
-
-    .feature p {
-      font-size: 14px;
-      color: var(--muted);
+    .screenshot img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
     }
 
     .cta {
@@ -164,61 +158,61 @@
   <div class="hero">
     <h1><span>Talent-X</span></h1>
     <p>
-      L’application qui aide les athlètes et les coachs à organiser l’entraînement,
-      suivre la progression et avancer ensemble.
+      L’application qui aide les athlètes et les coachs à organiser
+      l’entraînement et suivre la progression.
     </p>
-    <a href="#">Rejoindre la bêta</a>
+    <a class="btn" target="_blank"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSelf06qdykUF7EIo3ZdPJEULVsh0qZ8ErUlzF8V7pwFXqv57w/viewform">
+       Rejoindre la bêta
+    </a>
   </div>
 </header>
 
 <main>
 
   <section class="card">
-    <h2>L’entraînement, sans désordre</h2>
+    <h2>Un entraînement clair, partout</h2>
     <p>
-      Fini les notes dispersées et les outils bricolés.
       Talent-X centralise la planification, l’historique et le suivi
-      pour que ton entraînement reste clair et structuré.
+      pour t’aider à rester organisé et concentré sur l’essentiel.
     </p>
   </section>
 
   <section class="card">
-    <h2>Un outil pensé pour le collectif</h2>
+    <h2>Découvre l’application</h2>
     <p>
-      Les coachs organisent, les athlètes suivent,
-      et tout le monde partage la même vision.
+      Une interface simple, pensée pour le terrain,
+      accessible aux athlètes comme aux coachs.
     </p>
 
-    <div class="features">
-      <div class="feature">
-        <h3>Planification rapide</h3>
-        <p>Crée et organise tes séances en quelques secondes.</p>
+    <div class="screenshots">
+      <div class="screenshot">
+        <img src="screenshots/home.png" alt="Accueil Talent-X">
       </div>
-      <div class="feature">
-        <h3>Suivi clair</h3>
-        <p>Visualise ta progression dans le temps.</p>
+      <div class="screenshot">
+        <img src="screenshots/training.png" alt="Séances d'entraînement">
       </div>
-      <div class="feature">
-        <h3>Groupes & équipes</h3>
-        <p>Travaille efficacement avec ton coach ou ton groupe.</p>
+      <div class="screenshot">
+        <img src="screenshots/groups.png" alt="Groupes d'entraînement">
       </div>
-      <div class="feature">
-        <h3>Vision long terme</h3>
-        <p>Reste aligné avec tes objectifs saison après saison.</p>
+      <div class="screenshot">
+        <img src="screenshots/stats.png" alt="Suivi de progression">
       </div>
     </div>
   </section>
 
   <section class="card">
-    <h2>S’entraîner mieux, ensemble</h2>
+    <h2>Participe à la bêta</h2>
     <p>
-      Talent-X accompagne les athlètes ambitieux
-      et les coachs exigeants vers une pratique plus structurée
-      et plus efficace.
+      Talent-X est actuellement en phase de test.
+      Rejoins les premiers utilisateurs et aide-nous à améliorer l’application.
     </p>
 
     <div class="cta">
-      <a href="#">Accéder à la bêta</a>
+      <a class="btn" target="_blank"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSelf06qdykUF7EIo3ZdPJEULVsh0qZ8ErUlzF8V7pwFXqv57w/viewform">
+         Accéder à la bêta
+      </a>
     </div>
   </section>
 
